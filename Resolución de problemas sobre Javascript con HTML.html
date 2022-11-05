@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resolución de problemas sobre Javascript con HTML</title>
+    <script src="practica.js"></script>
+</head>
+
+<body>
+    <form>
+        <fieldset style="width:500px">
+            <legend>Convertidor de Centigrados a Fahrenheint</legend>
+            <label for="numero1">Grados Centigrados</label>
+            <input type="text" value="" id="numero" name="numero1"><br /> </input>
+        </fieldset> </br>
+        <button type="button" name="calcular"
+            onclick="convertirGradosCentigradosAGradosFahrenheint('numero');">Calcular</button>
+    </form>
+    </br>
+    <form>
+        <fieldset style="width:300px">
+            <span id="Respuesta"></span>
+        </fieldset>
+    </form>
+
+
+    </br>
+    <hr />
+    <form>
+        <fieldset style="width:200px">
+            <legend>Calculadora de Porcentajes</legend>
+            <label for="numero1">Numero</label>
+            <input type="text" value="" id="numero1" name="numero1"><br /></input>
+        </fieldset></br>
+        <button type="button" name="calcular" onclick="calcularPorcentajes('numero1');">Calcular</button>
+    </form>
+    </br>
+    <form>
+        <fieldset style="width:100px">
+            <span id="result"></span>
+        </fieldset>
+    </form>
+    </br>
+    <hr />
+
+    <legend>Generador de Tablas</legend>
+    <div>
+        <h4>Filas</h4>
+        <input type="number" id=Filas min="1" value="1"></input>
+        <h4>Columnas</h4>
+        <input type="number" id=Columnas min="1" value="1"></input> </br>
+        </br>
+
+        <button id="Generar" onclick="generarTablaHTML();">Generar</button></br>
+        </br>
+
+        <div id=contenedor></div>
+    </div>
+
+
+
+
+
+</body>
+
+</html>
